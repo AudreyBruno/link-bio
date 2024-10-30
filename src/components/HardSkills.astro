@@ -1,0 +1,51 @@
+---
+const hardSkills = [
+  {
+    icon: "https://github.com/get-icon/geticon/raw/master/icons/delphi.svg",
+    name: "Delphi",
+  },
+  {
+    icon: "https://github.com/get-icon/geticon/raw/master/icons/mysql.svg",
+    name: "MySQL",
+  },
+  {
+    icon: "https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg",
+    name: "Typescript",
+  },
+  {
+    icon: "https://github.com/get-icon/geticon/raw/master/icons/react.svg",
+    name: "React",
+  },
+  {
+    icon: "https://github.com/get-icon/geticon/raw/master/icons/nodejs-icon.svg",
+    name: "Node.js",
+  },
+  {
+    icon: "https://github.com/get-icon/geticon/raw/master/icons/html-5.svg",
+    name: "HTML5",
+  },
+  {
+    icon: "https://github.com/get-icon/geticon/raw/master/icons/css-3.svg",
+    name: "CSS3",
+  },
+  {
+    icon: "https://github.com/get-icon/geticon/raw/master/icons/tailwindcss-icon.svg",
+    name: "Tailwind CSS",
+  },
+];
+---
+
+<div
+  class="bg-[#151515] p-4 rounded-lg flex flex-col items-start hover:translate-y-[-2px] transition-transform"
+>
+  <span class="text-gray-200 font-bold text-lg">Hard Skills</span>
+  <div
+    class="flex justify-between items-center mt-2 space-x-2 text-2xl text-white"
+  >
+    {
+      hardSkills.map((skill) => (
+        <img src={skill.icon} alt={skill.name} class="w-5 h-5" />
+      ))
+    }
+  </div>
+</div>
