@@ -27,34 +27,31 @@ const socialMedias = [
 <Layout>
   <!-- <LoadingScreen client:only="react" /> -->
 
-  <div class="flex items-center justify-center min-h-screen bg-[#151515]">
-    <div class="container mx-auto max-w-md bg-black rounded-2xl p-4">
-      <div class="space-y-4">
-        <Header />
+  <div class="mx-auto max-w-md bg-black rounded-2xl p-4">
+    <div class="space-y-4">
+      <Header />
 
-        <HardSkills />
+      <HardSkills />
 
-        {links.map((link) => <Links link={link.link} title={link.title} />)}
+      {links.map((link) => <Links link={link.link} title={link.title} />)}
 
-        <div class="grid grid-cols-2 gap-2">
-          {
-            socialMedias.map((socialMedia) => (
-              <SocialMedia link={socialMedia.link} icon={socialMedia.icon} />
-            ))
-          }
-        </div>
+      <div class="grid grid-cols-2 gap-2">
+        {
+          socialMedias.map((socialMedia) => (
+            <SocialMedia link={socialMedia.link} icon={socialMedia.icon} />
+          ))
+        }
+      </div>
 
-        <div class="flex flex-col items-center gap-2">
-          <span class="text-[#fafafab4] text-base pt-4">Estou escutando...</span
-          >
-          <iframe
-            style="rounded-lg"
-            src="https://open.spotify.com/embed/playlist/6IZPB1SNtMeW85YcGHlDmf"
-            width="100%"
-            height="152"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"></iframe>
-        </div>
+      <div class="flex flex-col items-center gap-2">
+        <span class="text-[#fafafab4] text-base pt-4">Estou escutando...</span>
+        <iframe
+          style="rounded-lg"
+          src="https://open.spotify.com/embed/playlist/6IZPB1SNtMeW85YcGHlDmf"
+          width="100%"
+          height="152"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
       </div>
     </div>
   </div>
