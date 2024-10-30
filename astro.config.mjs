@@ -12,4 +12,8 @@ export default defineConfig({
   integrations: [tailwind(), react()],
   output: "server",
   adapter: vercel(),
+  server: {
+    host: "0.0.0.0",
+    port: 3000,
+  },
 });
