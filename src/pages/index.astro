@@ -2,13 +2,20 @@
 import HardSkills from "../components/HardSkills.astro";
 import Header from "../components/Header.astro";
 import Links from "../components/Links.astro";
+import LoadingScreen from "../components/LoadingScreen";
 import SocialMedia from "../components/SocialMedia.astro";
 import Layout from "../layouts/Layout.astro";
 
 const links = [
   {
+    icon: "/web-white-icon.png",
     link: "https://google.com",
     title: "Meu Portfólio",
+  },
+  {
+    icon: "/magalu.png",
+    link: "https://www.magazinevoce.com.br/magazineaudreyBruno/",
+    title: "Influenciador Magalu",
   },
 ];
 
@@ -25,7 +32,7 @@ const socialMedias = [
 ---
 
 <Layout>
-  <!-- <LoadingScreen client:only="react" /> -->
+  <LoadingScreen client:only="react" />
 
   <div class="mx-auto max-w-md bg-black rounded-2xl p-4">
     <div class="space-y-4">
@@ -33,7 +40,11 @@ const socialMedias = [
 
       <HardSkills />
 
-      {links.map((link) => <Links link={link.link} title={link.title} />)}
+      {
+        links.map((link) => (
+          <Links link={link.link} title={link.title} icon={link.icon} />
+        ))
+      }
 
       <div class="grid grid-cols-2 gap-2">
         {
