@@ -2,7 +2,6 @@
 import HardSkills from "../components/HardSkills.astro";
 import Header from "../components/Header.astro";
 import Links from "../components/Links.astro";
-import LoadingScreen from "../components/LoadingScreen";
 import SocialMedia from "../components/SocialMedia.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -32,8 +31,6 @@ const socialMedias = [
 ---
 
 <Layout>
-  <LoadingScreen client:only="react" />
-
   <div class="mx-auto max-w-md bg-black rounded-2xl p-4">
     <div class="space-y-4">
       <Header />
