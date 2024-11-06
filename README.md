@@ -1,47 +1,50 @@
-# Astro Starter Kit: Minimal
+# Link Bio
+Este é um projeto de "Link Bio" construído com Astro. Ele oferece uma página personalizada e responsiva para compartilhar múltiplos links em plataformas de mídia social.
 
-```sh
-npm create astro@latest -- --template minimal
+## 🚀 Características
+- Construído com Astro para performance otimizada
+- Componentes React para interatividade
+- Estilização com Tailwind CSS para design responsivo
+- Tela de carregamento animada
+- Configurado para deploy na Vercel
+
+## 🛠️ Tecnologias Utilizadas
+- Astro
+- React
+- Tailwind CSS
+- TypeScript
+
+## 🚀 Como Iniciar
+
+1. Clone o repositório
+2. Instale as dependências:
+```bash
+# Usando pnpm
+pnpm install
+
+# Usando npm
+npm install
+
+# Usando yarn
+yarn install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+3. Inicie o servidor de desenvolvimento:
+```bash
+# Usando pnpm
+pnpm run dev
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+# Usando npm
+npm run dev
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+# Usando yarn
+yarn dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 📦 Deployment
+Este projeto está configurado para deploy na Vercel. Conecte seu repositório à Vercel para deploy automático a cada push.
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🎨 Personalização
+Você pode personalizar o projeto editando os arquivos em `src/pages/` e `src/components/`. O estilo pode ser ajustado no `tailwind.config.js`.
