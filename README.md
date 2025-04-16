@@ -10,7 +10,6 @@ Este é um projeto de "Link Bio" construído com Astro. Ele oferece uma página 
 
 ## 🛠️ Tecnologias Utilizadas
 - Astro
-- React
 - Tailwind CSS
 - TypeScript
 
